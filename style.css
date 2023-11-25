@@ -427,17 +427,16 @@ nav .sm-screen-links-con ul a:hover {
 }
 .statistics {
   position: relative;
-  width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
+  width: 100vw;
   background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url("img/hero-bg.jpg") center center no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 50px 0;
 }
 .statistics div {
-  margin: 20px;
+  padding: 0;
+  margin: 0;
   text-align: center;
 }
 .statistics div p, .statistics div span {
@@ -453,6 +452,11 @@ nav .sm-screen-links-con ul a:hover {
   font-size: 15px;
 }
 
+@media (max-width: 991px) {
+  .statistics div {
+    margin-block-end: 20px;
+  }
+}
 .services {
   position: relative;
   width: 100%;

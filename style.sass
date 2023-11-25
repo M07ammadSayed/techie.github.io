@@ -356,15 +356,15 @@ nav
 
 .statistics
     position: relative
-    width: 100%
-    height: fit-content
+    width: 100vw
     background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url("img/hero-bg.jpg") center center no-repeat
+    background-size: cover
     display: flex
     justify-content: center
-    align-items: center
     padding: 50px 0
     div
-        margin: 20px
+        padding: 0
+        margin: 0
         text-align: center
         p, span
             color: #fff
@@ -375,6 +375,11 @@ nav
         p
             color: rgba(255, 255, 255, 0.8)
             font-size: 15px
+
+@media ( max-width: 991px )
+    .statistics
+        div
+            margin-block-end: 20px
 
 .services
     position: relative
