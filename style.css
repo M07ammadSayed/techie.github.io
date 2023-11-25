@@ -330,8 +330,9 @@ nav .sm-screen-links-con ul a:hover {
     font-size: 19px;
   }
   .landing div p {
-    max-width: 80%;
+    max-width: 85%;
     font-size: 14px;
+    text-align: cen;
   }
 }
 @media (min-width: 576px) and (max-width: 991px) {
