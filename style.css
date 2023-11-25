@@ -333,6 +333,7 @@ nav .sm-screen-links-con ul a:hover {
     max-width: 85%;
     font-size: 13px;
     text-align: center;
+    color: red;
   }
 }
 @media (min-width: 576px) and (max-width: 991px) {
@@ -1062,13 +1063,14 @@ nav .sm-screen-links-con ul a:hover {
   align-items: center;
   flex-direction: column;
   background: linear-gradient(42deg, #5846f9 0%, #7b27d8 100%);
-  padding: 50px;
+  padding: 50px 0;
 }
 .freq-ques header {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin: 0 20px;
   margin-block-end: 50px;
 }
 .freq-ques header p {
