@@ -783,7 +783,7 @@ nav .sm-screen-links-con ul a:hover {
 
 .portfolio {
   position: relative;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
