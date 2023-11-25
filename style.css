@@ -181,16 +181,14 @@ nav .sm-screen-links-con span.x {
   cursor: pointer;
 }
 nav .sm-screen-links-con ul {
-  position: relative;
-  top: 40vh;
-  width: 95%;
-  height: 40%;
+  position: fixed;
+  top: 15%;
+  width: 90%;
   background-color: #fff;
   margin: 0;
-  padding: 0;
+  padding: 20px 20px 180px;
   display: flex;
   flex-direction: column;
-  padding: 20px 0 0 20px;
 }
 nav .sm-screen-links-con ul a {
   margin-block-end: 20px;
