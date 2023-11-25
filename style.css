@@ -327,7 +327,11 @@ nav .sm-screen-links-con ul a:hover {
     width: 50%;
   }
   .landing div h1 {
-    font-size: 20px;
+    font-size: 19px;
+  }
+  .landing div p {
+    max-width: 80%;
+    font-size: 14px;
   }
 }
 @media (min-width: 576px) and (max-width: 991px) {
