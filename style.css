@@ -202,6 +202,25 @@ nav .sm-screen-links-con ul a:hover {
   color: #5846f9;
 }
 
+@media (max-width: 575.98px) {
+  nav {
+    justify-content: space-between;
+  }
+  nav .logo {
+    font-size: 24px;
+    margin-inline-start: 20px;
+  }
+  nav .links {
+    display: none;
+  }
+  nav .get-started {
+    display: none;
+  }
+  nav div.bars {
+    display: block;
+    margin-inline-end: 20px;
+  }
+}
 @media (min-width: 576px) and (max-width: 991px) {
   nav {
     justify-content: space-between;
@@ -294,6 +313,26 @@ nav .sm-screen-links-con ul a:hover {
     transform: translateY(-10px);
   }
 }
+@media (max-width: 575.98px) {
+  .landing {
+    flex-direction: column !important;
+    justify-content: center;
+  }
+  .landing div {
+    width: 100%;
+    margin: 0 10px;
+    align-items: center;
+  }
+  .landing div:first-child {
+    width: 50%;
+  }
+  .landing div h1 {
+    font-size: 26px;
+  }
+  .landing div p {
+    font-size: 18px;
+  }
+}
 @media (min-width: 576px) and (max-width: 991px) {
   .landing {
     flex-direction: column !important;
@@ -361,6 +400,20 @@ nav .sm-screen-links-con ul a:hover {
   height: auto;
 }
 
+@media (max-width: 575.98px) {
+  .about {
+    width: 100%;
+    height: auto;
+    flex-direction: column !important;
+    justify-content: center;
+  }
+  .about div {
+    width: 100%;
+  }
+  .about div:first-child {
+    margin-block-end: 20px;
+  }
+}
 @media (min-width: 576px) and (max-width: 991px) {
   .about {
     width: 100%;
@@ -606,6 +659,21 @@ nav .sm-screen-links-con ul a:hover {
   font-style: italic;
 }
 
+@media (max-width: 575.98px) {
+  .features .fea-con {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .features .fea-con div.img-con, .features .fea-con div.box-con {
+    width: 90%;
+  }
+  .features .fea-con div.img-con {
+    margin-block-end: 20px;
+  }
+}
 @media (min-width: 576px) and (max-width: 991px) {
   .features .fea-con {
     width: 100%;
@@ -961,6 +1029,15 @@ nav .sm-screen-links-con ul a:hover {
   transform: rotate(45deg);
 }
 
+@media (max-width: 575.98px) {
+  .pricing .pricing-con div.box-1, .pricing .pricing-con div.box-2, .pricing .pricing-con div.box-3, .pricing .pricing-con div.box-4 {
+    width: 100%;
+    padding: 0;
+  }
+  .pricing .pricing-con div.box-1 div:first-of-type, .pricing .pricing-con div.box-2 div:first-of-type, .pricing .pricing-con div.box-3 div:first-of-type, .pricing .pricing-con div.box-4 div:first-of-type {
+    width: 100%;
+  }
+}
 @media (min-width: 576px) and (max-width: 767px) {
   .pricing .pricing-con div.box-1, .pricing .pricing-con div.box-2, .pricing .pricing-con div.box-3, .pricing .pricing-con div.box-4 {
     width: 100%;
@@ -1089,6 +1166,8 @@ nav .sm-screen-links-con ul a:hover {
 }
 .contact .contact-con {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .contact .contact-con div {
   width: 100%;
@@ -1219,8 +1298,9 @@ nav .sm-screen-links-con ul a:hover {
   background: #7b27d8;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (max-width: 575.98px) {
   .contact .contact-con div {
+    flex-direction: column;
     justify-content: center;
   }
   .contact .contact-con div div.address, .contact .contact-con div div.email-call {
@@ -1240,19 +1320,29 @@ nav .sm-screen-links-con ul a:hover {
   .contact .contact-con div form {
     width: 100%;
   }
+  .contact .contact-con div form div {
+    flex-direction: row;
+  }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 991px) {
   .contact .contact-con div {
+    flex-direction: column;
     justify-content: center;
   }
   .contact .contact-con div div.address, .contact .contact-con div div.email-call {
     width: 100%;
+  }
+  .contact .contact-con div div.email-call {
+    flex-direction: row;
   }
   .contact .contact-con div iframe {
     width: 100%;
   }
   .contact .contact-con div form {
     width: 100%;
+  }
+  .contact .contact-con div form div {
+    flex-direction: row;
   }
 }
 footer {
@@ -1307,6 +1397,25 @@ footer div.social div i {
   transition: 0.4s;
 }
 
+@media (max-width: 575.98px) {
+  footer {
+    flex-direction: column;
+  }
+  footer div.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block-end: 20px;
+    margin-inline-start: 0;
+  }
+  footer div.copyright p:first-of-type {
+    margin-block-end: 10px;
+  }
+  footer div.social {
+    width: 50%;
+    margin-inline-end: 0;
+  }
+}
 @media (min-width: 576px) and (max-width: 991px) {
   footer {
     flex-direction: column;

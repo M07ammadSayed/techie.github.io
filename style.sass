@@ -176,6 +176,20 @@ nav
                 &:hover
                     color: $accent-color
 
+@media (max-width: 575.98px)
+    nav
+        justify-content: space-between
+        .logo
+            font-size: 24px
+            margin-inline-start: 20px
+        .links
+            display: none
+        .get-started
+            display: none
+        div.bars
+            display: block
+            margin-inline-end: 20px
+
 @media ( min-width: 576px ) and ( max-width: 991px )
     nav
         justify-content: space-between
@@ -249,6 +263,21 @@ nav
     100%
         transform: translateY(-10px)
 
+@media (max-width: 575.98px)
+    .landing
+        flex-direction: column !important
+        justify-content: center
+        div
+            width: 100%
+            margin: 0 10px
+            align-items: center
+            &:first-child
+                width: 50%
+            h1
+                font-size: 26px
+            p
+                font-size: 18px
+
 @media ( min-width: 576px ) and ( max-width: 991px )
     .landing
         flex-direction: column !important
@@ -302,6 +331,17 @@ nav
         img
             max-width: 100%
             height: auto
+
+@media (max-width: 575.98px)
+    .about
+        width: 100%
+        height: auto
+        flex-direction: column !important
+        justify-content: center
+        div
+            width: 100%
+            &:first-child
+                margin-block-end: 20px
 
 @media ( min-width: 576px ) and ( max-width: 991px )
     .about
@@ -509,6 +549,19 @@ nav
                             color: #848484
                             font-size: 15px
                             font-style: italic
+
+@media (max-width: 575.98px)
+    .features
+        .fea-con
+            width: 100%
+            display: flex
+            justify-content: space-evenly
+            align-items: center
+            flex-direction: column
+            div.img-con, div.box-con
+                width: 90%
+            div.img-con
+                margin-block-end: 20px
 
 @media ( min-width: 576px ) and ( max-width: 991px )
     .features
@@ -828,6 +881,16 @@ nav
                 z-index: 2
                 transform: rotate(45deg)
 
+@media (max-width: 575.98px)
+    .pricing
+        .pricing-con
+            div.box-1, div.box-2, div.box-3, div.box-4
+                width: 100%
+                padding: 0
+                div
+                    &:first-of-type
+                        width: 100%
+
 @media ( min-width: 576px ) and ( max-width: 767px )
     .pricing
         .pricing-con
@@ -943,8 +1006,8 @@ nav
                         width: 100%
     .contact-con
         width: 100%
-        // display: flex
-        // flex-direction: column
+        display: flex
+        flex-direction: column
         div
             width: 100%
             display: flex
@@ -1056,10 +1119,11 @@ nav
                     &:hover
                         background: #7b27d8
 
-@media ( min-width: 576px ) and ( max-width: 767px )
+@media (max-width: 575.98px)
     .contact
         .contact-con
             div
+                flex-direction: column
                 justify-content: center
                 div.address, div.email-call
                     width: 100%
@@ -1073,18 +1137,26 @@ nav
                     width: 100%
                 form
                     width: 100%
+                    div
+                        flex-direction: row
 
-@media ( min-width: 768px ) and ( max-width: 991px )
+@media ( min-width: 576px ) and ( max-width: 991px )
     .contact
         .contact-con
             div
+                flex-direction: column
                 justify-content: center
                 div.address, div.email-call
                     width: 100%
+                div.email-call
+                    flex-direction: row
                 iframe
                     width: 100%
                 form
                     width: 100%
+                    div
+                        flex-direction: row
+
 
 footer
     width: 100%
@@ -1127,6 +1199,22 @@ footer
             i
                 color: #fff
                 transition: .4s
+
+@media (max-width: 575.98px)
+    footer
+        flex-direction: column
+        div.copyright
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-block-end: 20px
+            margin-inline-start: 0
+            p
+                &:first-of-type
+                    margin-block-end: 10px
+        div.social
+            width: 50%
+            margin-inline-end: 0
 
 @media ( min-width: 576px ) and ( max-width: 991px )
     footer
