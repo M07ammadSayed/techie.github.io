@@ -824,7 +824,6 @@ nav .sm-screen-links-con ul a:hover {
   width: 100%;
 }
 .portfolio ul {
-  width: 20%;
   display: flex;
   justify-content: space-between;
   align-items: center;
