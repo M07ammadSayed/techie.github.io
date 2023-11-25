@@ -332,7 +332,7 @@ nav .sm-screen-links-con ul a:hover {
   .landing div p {
     max-width: 85%;
     font-size: 14px;
-    text-align: cen;
+    text-align: center;
   }
 }
 @media (min-width: 576px) and (max-width: 991px) {
@@ -432,16 +432,17 @@ nav .sm-screen-links-con ul a:hover {
 }
 .statistics {
   position: relative;
-  width: 100vw;
+  width: 100% !important;
   background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url("img/hero-bg.jpg") center center no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
-  padding: 50px 0;
+  padding: 50px 0 !important;
+  margin: 0 !important;
 }
 .statistics div {
-  padding: 0;
-  margin: 0;
+  padding: 0 !important;
+  margin: 0 !important;
   text-align: center;
 }
 .statistics div p, .statistics div span {
